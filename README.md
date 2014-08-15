@@ -37,6 +37,9 @@ See http://blairvanderhoof.com/gist-embed/ for all possible ways to use gist-emb
 
 ###Change log
 
+####Version 2.0 (Aug 15, 2014)
+* Merged #29 from steinwaywhw to remove the bottom border when the footer is hidden.  Thanks steinwaywhw!
+
 ####Version 1.9 (July 21, 2014)
 * Merged #25 from scottdorman to use jQuery.data to parse data attributes instead of jQuery.attr.  This provides compatibility with knockout bindings.  Thanks scottdorman!
 
