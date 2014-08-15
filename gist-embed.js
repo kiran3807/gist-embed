@@ -143,6 +143,7 @@
             // option to remove footer
             if (hideFooterOption) {
               $responseDiv.find('.gist-meta').remove();
+              $responseDiv.find('.gist-data').css("border-bottom", "0px");
             }
 
             // option to remove
