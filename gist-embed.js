@@ -143,6 +143,10 @@
             // option to remove footer
             if (hideFooterOption) {
               $responseDiv.find('.gist-meta').remove();
+              
+              // present a uniformed border when footer is hidden
+              $responseDiv.find('.gist-data').css("border-bottom", "0px");
+              $responseDiv.find('.gist-file').css("border-bottom", "1px solid #ddd");
             }
 
             // option to remove
