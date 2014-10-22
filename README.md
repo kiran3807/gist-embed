@@ -16,7 +16,7 @@
 ```
 
 #### Other ways to use gist-embed
-#### Ruby Gem
+##### Ruby Gem
 @itsNikolay Has created an easy to use ruby gem for gist-embed, you can find it here: https://github.com/itsNikolay/gist-embed-rails
 
 ####Examples
