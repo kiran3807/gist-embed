@@ -19,7 +19,7 @@
 ##### Ruby Gem
 @itsNikolay Has created an easy to use ruby gem for gist-embed, you can find it here: https://github.com/itsNikolay/gist-embed-rails
 ##### AngularJS
-@pasupulaphani Has craeted a small library to ease the use of gist-embed in your angular projects: https://github.com/pasupulaphani/angular-gist-embed
+@pasupulaphani Has created a small library to ease the use of gist-embed in your angular projects: https://github.com/pasupulaphani/angular-gist-embed
 
 ####Examples
 See http://blairvanderhoof.com/gist-embed/ for all possible ways to use gist-embed:
