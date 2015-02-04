@@ -35,6 +35,7 @@
         highlightLines,
         hideFooterOption,
         hideLineNumbersOption,
+        showLoading,
         data = {};
 
       // make block level so loading text shows properly
@@ -46,6 +47,8 @@
       hideLineNumbersOption = $elem.data('gist-hide-line-numbers') === true;
       lines = $elem.data('gist-line');
       highlightLines = $elem.data('gist-highlight-line');
+      showLoading = $elem.data('gist-show-loading') !== undefined ?
+        $elem.data('gist-show-loading') : true;
 
       if (file) {
         data.file = file;
@@ -57,7 +60,9 @@
       url = 'https://gist.github.com/' + id + '.json';
 
       // loading
-      $elem.html('Loading gist ' + url + (data.file ? ', file: ' + data.file : '') + '...');
+      if (showLoading) {
+        $elem.html('Loading gist ' + url + (data.file ? ', file: ' + data.file : '') + '...');
+      }
 
       // request the json version of this gist
       $.ajax({
@@ -143,7 +148,7 @@
             // option to remove footer
             if (hideFooterOption) {
               $responseDiv.find('.gist-meta').remove();
-              
+
               // present a uniformed border when footer is hidden
               $responseDiv.find('.gist-data').css("border-bottom", "0px");
               $responseDiv.find('.gist-file').css("border-bottom", "1px solid #ddd");
