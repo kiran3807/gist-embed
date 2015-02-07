@@ -43,7 +43,7 @@ See http://blairvanderhoof.com/gist-embed/ for all possible ways to use gist-emb
 
 ###Change log
 
-####Version 2.0 (Feb 6, 2014)
+####Version 2.1 (Feb 6, 2014)
 * You can now add `data-gist-show-loading="false"` to prevent the "Loading..." text from showing when the gist is created.
 
 ####Version 2.0 (Aug 15, 2014)
