@@ -5,7 +5,7 @@
 ```html
   <head>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gist-embed/2.0/gist-embed.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gist-embed/2.1/gist-embed.min.js"></script>
   </head>
 ```
 
@@ -42,6 +42,9 @@ See http://blairvanderhoof.com/gist-embed/ for all possible ways to use gist-emb
 * Use the same pattern for line numbers as data-gist-line, but use the attribute data-gist-highlight-line
 
 ###Change log
+
+####Version 2.0 (Feb 6, 2014)
+* You can now add `data-gist-show-loading="false"` to prevent the "Loading..." text from showing when the gist is created.
 
 ####Version 2.0 (Aug 15, 2014)
 * Merged #29 from steinwaywhw to remove the bottom border when the footer is hidden.  Thanks steinwaywhw!
