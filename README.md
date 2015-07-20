@@ -43,7 +43,11 @@ See http://blairvanderhoof.com/gist-embed/ for all possible ways to use gist-emb
 
 ###Change log
 
-####Version 2.1 (Feb 6, 2014)
+####Version 2.2 (July 20, 2015)
+* BREAKING CHANGE:  Github messed with the api, if you are using version <= 2.1, your gists will be unstyled.  This fixes issue #39.
+
+
+####Version 2.1 (Feb 6, 2015)
 * You can now add `data-gist-show-loading="false"` to prevent the "Loading..." text from showing when the gist is created.
 
 ####Version 2.0 (Aug 15, 2014)
