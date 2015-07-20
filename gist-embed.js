@@ -125,8 +125,8 @@
                 'width': '100%'
               });
 
-              // find all .line divs (acutal code lines) that match the highlightLines and add the highlight class
-              $responseDiv.find('.line').each(function(index) {
+              // find all .js-file-line tds (actual code lines) that match the highlightLines and add the highlight class
+              $responseDiv.find('.js-file-line').each(function(index) {
                 if ($.inArray(index + 1, highlightLineNumbers) !== -1) {
                   $(this).css({
                     'background-color': 'rgb(255, 255, 204)'
@@ -135,21 +135,14 @@
               });
             }
 
-            // if user provided a line param, get the line numbers baesed on the criteria
+            // if user provided a line param, get the line numbers based on the criteria
             if (lines) {
               lineNumbers = getLineNumbers(lines);
 
-              // find all .line divs (acutal code lines) and remove them if they don't exist in the line param
-              $responseDiv.find('.line').each(function(index) {
+              // find all trs containing code lines that don't exist in the line param
+              $responseDiv.find('.js-file-line').each(function(index) {
                 if (($.inArray(index + 1, lineNumbers)) === -1) {
-                  $(this).remove();
-                }
-              });
-
-              // find all .line-number divs (numbers on the gutter) and remove them if they don't exist in the line param
-              $responseDiv.find('.line-number').each(function(index) {
-                if (($.inArray(index + 1, lineNumbers)) === -1) {
-                  $(this).remove();
+                  $(this).parent().remove();
                 }
               });
             }
@@ -165,7 +158,7 @@
 
             // option to remove
             if (hideLineNumbersOption) {
-              $responseDiv.find('.line-numbers').remove();
+              $responseDiv.find('.js-line-number').remove();
             }
 
           } else {
