@@ -1,6 +1,6 @@
 // author: Blair Vanderhoof
 // https://github.com/blairvanderhoof/gist-embed
-// version 2.1
+// version 2.2
 (function($) {
 
   function getLineNumbers(lineRangeString) {
