@@ -45,6 +45,7 @@ See http://blairvanderhoof.com/gist-embed/ for all possible ways to use gist-emb
 
 ####Version 2.2 (July 20, 2015)
 * BREAKING CHANGE:  Github messed with the api, if you are using version <= 2.1, your gists will be unstyled.  This fixes issue #39.
+* Support line numbers with new format. Thanks @tellibus https://github.com/blairvanderhoof/gist-embed/pull/40
 
 
 ####Version 2.1 (Feb 6, 2015)
