@@ -20,5 +20,14 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/blairvanderhoof/gist-embed/issues"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "https://github.com/blairvanderhoof/gist-embed.git",
+    "basePath": "",
+    "files": [
+      "gist-embed.js",
+      "gist-embed.min.js"
+    ]
   }
 }
