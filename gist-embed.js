@@ -36,6 +36,7 @@
         hideFooterOption,
         hideLineNumbersOption,
         showLoading,
+        showSpinner,
         data = {};
 
       // make block level so loading text shows properly
@@ -47,6 +48,7 @@
       hideLineNumbersOption = $elem.data('gist-hide-line-numbers') === true;
       lines = $elem.data('gist-line');
       highlightLines = $elem.data('gist-highlight-line');
+      showSpinner = $elem.data('gist-show-spinner') === true;
       showLoading = $elem.data('gist-show-loading') !== undefined ?
         $elem.data('gist-show-loading') : true;
 
@@ -62,6 +64,12 @@
       // loading
       if (showLoading) {
         $elem.html('Loading gist ' + url + (data.file ? ', file: ' + data.file : '') + '...');
+      }
+    
+      // spinner
+      //TODO add css to center
+      if (showSpinner) {
+        $elem.html('<img src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif">');
       }
 
       // request the json version of this gist
@@ -179,3 +187,4 @@
   });
 
 })(jQuery);
+
