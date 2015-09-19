@@ -66,10 +66,9 @@
         $elem.html('Loading gist ' + url + (data.file ? ', file: ' + data.file : '') + '...');
       }
     
-      // spinner
-      //TODO add css to center
+      // loading spinner
       if (showSpinner) {
-        $elem.html('<img src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif">');
+        $elem.html('<img style="display:block;margin-left:auto;margin-right:auto" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif">');
       }
 
       // request the json version of this gist
