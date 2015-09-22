@@ -50,11 +50,11 @@
       highlightLines = $elem.data('gist-highlight-line');
       showSpinner = $elem.data('gist-show-spinner') === true;
       if (showSpinner) {
-        $elem.data('gist-show-loading') === false;
+        showLoading = false;
+      } else {
+        showLoading = $elem.data('gist-show-loading') !== undefined ?
+          $elem.data('gist-show-loading') : true;
       }
-      showLoading = $elem.data('gist-show-loading') !== undefined ?
-        $elem.data('gist-show-loading') : true;
-
 
       if (file) {
         data.file = file;
