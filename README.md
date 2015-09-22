@@ -43,6 +43,10 @@ See http://blairvanderhoof.com/gist-embed/ for all possible ways to use gist-emb
 
 ###Change log
 
+####Version 2.3 (Sep 22, 2015)
+* Merged pull request https://github.com/blairvanderhoof/gist-embed/pull/45 
+* This gives the option of showing a loading spinner icon instead of loading text.  Thanks @dnlvgl!
+
 ####Version 2.2 (July 20, 2015)
 * BREAKING CHANGE:  Github messed with the api, if you are using version <= 2.1, your gists will be unstyled.  This fixes issue #39.
 * Support line numbers with new format. Thanks @tellibus https://github.com/blairvanderhoof/gist-embed/pull/40
