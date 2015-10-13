@@ -2,6 +2,7 @@
 // https://github.com/blairvanderhoof/gist-embed
 // version 2.3
 (function($) {
+  'use strict';
 
   function getLineNumbers(lineRangeString) {
     var lineNumbers = [], range, lineNumberSections;
@@ -38,6 +39,7 @@
         showLoading,
         showSpinner,
         data = {};
+      var loading;
 
       // make block level so loading text shows properly
       $elem.css('display', 'block');
