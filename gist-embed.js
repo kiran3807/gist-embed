@@ -33,13 +33,13 @@
         url,
         file,
         lines,
+        loading,
         highlightLines,
         hideFooterOption,
         hideLineNumbersOption,
         showLoading,
         showSpinner,
         data = {};
-      var loading;
 
       // make block level so loading text shows properly
       $elem.css('display', 'block');
