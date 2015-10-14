@@ -43,6 +43,10 @@ See http://blairvanderhoof.com/gist-embed/ for all possible ways to use gist-emb
 
 ###Change log
 
+####Version 2.4 (Oct 13, 2015)
+* Merged pull request https://github.com/blairvanderhoof/gist-embed/pull/46 
+* Fixes global var bug and adds 'use strict' to show linter warnings and hopefully prevent future errors. Thanks @bardzusny!
+
 ####Version 2.3 (Sep 22, 2015)
 * Merged pull request https://github.com/blairvanderhoof/gist-embed/pull/45 
 * This gives the option of showing a loading spinner icon instead of loading text.  Thanks @dnlvgl!
