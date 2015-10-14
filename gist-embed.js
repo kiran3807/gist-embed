@@ -2,6 +2,7 @@
 // https://github.com/blairvanderhoof/gist-embed
 // version 2.3
 (function($) {
+  'use strict';
 
   function getLineNumbers(lineRangeString) {
     var lineNumbers = [], range, lineNumberSections;
@@ -32,6 +33,7 @@
         url,
         file,
         lines,
+        loading,
         highlightLines,
         hideFooterOption,
         hideLineNumbersOption,
