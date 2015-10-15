@@ -1,6 +1,8 @@
-// author: Blair Vanderhoof
-// https://github.com/blairvanderhoof/gist-embed
-// version 2.4
+/*
+ * author: Blair Vanderhoof
+ * https://github.com/blairvanderhoof/gist-embed
+ * version 2.4
+ */
 (function($) {
   'use strict';
 
@@ -63,7 +65,9 @@
       }
 
       // if the id doesn't exist, then ignore the code block
-      if (!id) return false;
+      if (!id) {
+        return false;
+      }
 
       url = 'https://gist.github.com/' + id + '.json';
       loading = 'Loading gist ' + url + (data.file ? ', file: ' + data.file : '') + '...';
@@ -72,7 +76,7 @@
       if (showLoading)  {
         $elem.html(loading);
       }
-    
+
       // loading spinner
       if (showSpinner) {
         $elem.html('<img style="display:block;margin-left:auto;margin-right:auto"  alt="' + loading + '" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif">');
@@ -166,8 +170,8 @@
               $responseDiv.find('.gist-meta').remove();
 
               // present a uniformed border when footer is hidden
-              $responseDiv.find('.gist-data').css("border-bottom", "0px");
-              $responseDiv.find('.gist-file').css("border-bottom", "1px solid #ddd");
+              $responseDiv.find('.gist-data').css('border-bottom', '0px');
+              $responseDiv.find('.gist-file').css('border-bottom', '1px solid #ddd');
             }
 
             // option to remove
@@ -193,4 +197,3 @@
   });
 
 })(jQuery);
-
