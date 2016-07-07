@@ -87,7 +87,7 @@
         url: url,
         data: data,
         dataType: 'jsonp',
-        timeout: 10000,
+        timeout: 20000,
         success: function(response) {
           var linkTag,
             head,
